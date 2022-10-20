@@ -1,0 +1,40 @@
+Fprint 
+type hotdog int 
+
+package main 
+import(
+"fmt"
+)
+
+type hotdog int
+var b hotdog 
+func main() {
+x := 10 
+fmt.Printf("%T\n", x)
+
+fmt.Printf("%T", b)
+
+}
+
+## type conversion, documentation go Conversions T(x) 
+
+type hotdog int 
+
+package main 
+import(
+"fmt"
+)
+
+type hotdog int
+var b = hotdog 
+func main() {
+        x := 10 
+        fmt.Printf("%v\n", x)
+       
+        
+        x = int(b)
+               fmt.Printf("%v\n",x)
+
+}
+
+
