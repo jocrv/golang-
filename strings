@@ -1,0 +1,30 @@
+package main 
+import(
+"fmt"
+)
+
+var a int 
+var b float64
+var c string 
+var d bool 
+
+func main(){
+fmt.Printf("%v, %T\n", a, a)
+fmt.Printf("%v, %T\n", b, b)
+fmt.Printf("%v, %T\n", c, c)
+fmt.Printf("%v, %T\n", d, d)
+
+}
+
+## string literals, interpreted string literals, vs. raw string literals 
+
+package main 
+import(
+"fmt"
+)
+
+func main() {
+x := "oi bom dia\ncomovai?\tespero\"que\" tudo bem."'
+fmt.Println(x)
+
+}
