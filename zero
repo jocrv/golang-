@@ -7,14 +7,20 @@ pointers, functions, interfaces, slices, channels, maps: nil
 use := always as possible
 using var to package-level scope 
 
-package main
-import( " fmt")
-var x int
+package main 
+import(
+"fmt"
+)
 
-func main() {
-	x = 10
-	x := 10 
-	fmt.printf("%v,%T", x, x)
-	x = 20 
-	fmt.Printf("%v, %T", x,x)
+var a int 
+var b float64
+var c string 
+var d bool 
+
+func main(){
+fmt.Printf("%v, %T\n", a, a)
+fmt.Printf("%v, %T\n", b, b)
+fmt.Printf("%v, %T\n", c, c)
+fmt.Printf("%v, %T\n", d, d)
+
 }
