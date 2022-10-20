@@ -1,0 +1,18 @@
+package main 
+import(
+"fmt"
+)
+
+fun main() {
+x := "oi"
+y := " bom dia "
+
+z := fmt.Sprint(x, " ", y)
+fmt.Println(z)
+
+}
+
+func sprint, sprintf, sprintln
+
+print -> file, write interface, e.g file or answr of server.
+func Fprint
