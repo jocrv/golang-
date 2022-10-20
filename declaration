@@ -7,3 +7,4 @@ func main() {
 	fmt.printf("%v,%T", x, x)
 }
 
+##compose slice, array, struct, map (created by user, compose is structure, create, structure, COMPOSE)
