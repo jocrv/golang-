@@ -1,0 +1,35 @@
+Print → standard out
+         func Print(a ...interface{}) (n int, err error)
+         func Println(a ...interface{}) (n int, err error)
+         func Printf(format string, a ...interface{}) (n int, err error)
+        Format verbs. (%v %T)
+Print → string, variables used 
+         func Sprint(a ...interface{}) string
+        func Sprintf(format string, a ...interface{}) string
+         func Sprintln(a ...interface{}) string\
+         
+         
+         package main 
+import(
+"fmt"
+)
+
+func main() {
+x := "oi"
+fmt.Print(x)
+}
+
+## func  sprint 
+
+
+package main 
+import(
+"fmt"
+)
+
+func main() {
+x := "oi"
+y := "bom dia"
+
+fmr.Println(x)
+fmt.Println
