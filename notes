@@ -1,0 +1,46 @@
+// estatic lang, int and int32 not the same, need to convert to mix, using int
+
+
+
+package main 
+import(
+"fmt"
+)
+
+func main() {
+
+x := 10 
+y := 10.0 
+
+fmt.Printf("%v, %T", x, x)
+fmt.Printf("%v, %T", y, y)
+}
+
+
+//[output]
+10, in
+10, float64 
+
+// the same using var
+
+package main 
+import(
+"fmt"
+)
+
+var x = 10
+var y = 10.0 
+
+func main() {
+x = 20
+fmt.Printf("%v, %T\n", x, x)
+fmt.Printf("%v, %T", y, y)
+}
+
+[output]
+20, int
+10, float64
+
+
+}
+
