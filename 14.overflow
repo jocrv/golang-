@@ -1,0 +1,23 @@
+//type uint16 , if I have to add more one number 
+
+package main
+import (
+"fmt"
+ )
+ 
+ func main() {
+ var i uint16
+ i = 65535
+ fmt.Println(i)
+ i++
+ fmt.Println(i)
+ i++
+ fmt.Println(i)
+ 
+ }
+ 
+ // if I add 65536 
+// output 
+655535 
+0 
+1 
