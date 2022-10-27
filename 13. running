@@ -1,0 +1,21 @@
+//the local ost where the playground are running
+
+
+package main
+
+import (
+	"fmt"
+	"runtime"
+)
+
+func main() {
+	fmt.Println(runtime.GOOS)
+	fmt.Println(runtime.GOARCH)
+
+}
+
+// output
+linux
+amd64
+
+Program exited.
