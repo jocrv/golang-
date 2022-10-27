@@ -1,0 +1,14 @@
+package main
+import 9
+"fmt"
+)
+
+func main() {
+
+var x := 10 
+var y := 10.0 
+
+
+fmt.Printf("%v, %T\n", x, x)
+fmt.Printf("%v, %T", y, y)
+
