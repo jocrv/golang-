@@ -1,0 +1,133 @@
+// sequence of byte, imutables, so we need to created a new string with changes 
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := "Hello, world"
+
+fmt.Printf("%v\n%T", s, s)
+
+}
+
+-raw string literals
+- conver slice to bytes 
+
+//error: convert to slice to bytes
+
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := `Hello, 
+
+world`
+
+fmt.Printf("%v\n%T", s, s)
+
+}
+
+// case 3 
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := "Hello, world"
+sb := []byte(s)
+
+fmt.Printf("%v\n%T", s, s)
+
+}
+
+//output: 
+72 101 108 111 44 32 112 108 97 121 103 114 111 
+117 110 100
+
+// case 4: 
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := "Hello, world"
+
+for _, v := range sb {
+
+fmt.Printf("%v- %T - %#U - %#x\n", v, v, v, v)
+ }
+}
+
+// case 5: using utef8
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := "ascii, éøâ 香"
+
+for _, v := range s {
+
+fmt.Printf("%v- %T - %#U - %#x\n", v, v, v, v)
+ }
+ 
+ fmt.Println("")
+ for i := 0; i < len(s); i ++ {
+fmt.Printf("%v- %T - %#U - %#x\n", s[i], s[i], s[i], s[i])
+ 
+}
+
+// output por byte, using the binary 
+
+package main
+import (
+
+"fmt"
+)
+func main(){
+s := "ascii, éøâ 香"
+
+for _, v := range s {
+
+fmt.Printf("%b- %T - %#U - %#x\n", v, v, v, v)
+ }
+ 
+ fmt.Println("")
+ for i := 0; i < len(s); i ++ {
+fmt.Printf("%b- %T - %#U - %#x\n", s[i], s[i], s[i], s[i])
+ 
+}
+
+// case 6
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	a := "e"
+	b := "é"
+	c := "香"
+	fmt.Printf("%v, %v, %v\n", a, b, c)
+
+	d := []byte(a)
+	e := []byte(b)
+	f := []byte(c)
+
+	fmt.Printf("%v, %v, %v", d, e, f)
+
+}
+
+// read the go documentaion too.
