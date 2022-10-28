@@ -1,0 +1,52 @@
+// non type integer, using with float64, sucessive constants non typer integers
+
+package main
+
+import (
+	"fmt"
+)
+
+const (
+	a = iota + 10000000
+	_
+	c
+	x
+	_
+	z
+)
+
+func main() {
+	fmt.Println(a, c, x, z)
+}
+
+//outpu 0 2 3 5
+// output 0 20 30 50 substitute a = iota * 10
+//
+
+package main
+
+import (
+	"fmt"
+)
+
+const (
+  a = iota
+  _ = iota 
+  c = iota
+	x = iota
+  _ = iota
+  z = iota
+  
+)
+
+func main() {
+	fmt.Println(a, c, x, z)
+}
+ 
+ //output:
+ //0 2 3 5
+ 
+ 
+
+
+
