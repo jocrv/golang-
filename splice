@@ -1,0 +1,64 @@
+package main
+
+import (
+	"fmt"
+)
+
+
+func main() {
+x = 2
+y = x << 1
+	fmt.Println("%b\n", x)
+  fmt.Printf("%b\n", y)
+}
+
+//output:
+// 10
+// 1
+
+0110000
+0011000
+0001100
+0000110
+0000011
+
+// this type of sequecen bitewise operations 
+
+
+package main
+
+import (
+	"fmt"
+)
+
+
+const (
+           _ = iota // 0
+            KB = 1 << (iota * 10) // 1 << (1 * 10)
+            MB = 1 << ( iota * 10) // 1 << (2 * 10)
+            GB = 1 << (iota * 10) // 1 << (3 * 10) 
+            TB = 1 << (iota * 10) // 1  << (4 * 10)
+  )
+  func main () { 
+  
+            
+	fmt.Println("binary\t\t\t\tdecimal")
+  fmt.Printf("%b\t\t\t", KB)
+  fmt.Printf("%d\n", KB)
+  fmt.Printf("%b\t\t", MB)
+  fmt.Printf("%d\n", MB)
+  fmt.Printf("%b\t", GB)
+  fmt.Printf("%d\n", GB)
+  
+  
+}
+
+//output:
+// 10
+// 1
+
+// 
+binary decimal
+10000000000. 1024 
+10000000000000 1048...
+
