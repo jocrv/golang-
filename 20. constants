@@ -1,0 +1,71 @@
+// const hi = "Good morning"
+const hi string = "Good morning"
+
+//42, int, uint, float64 that's a flebility
+
+package main
+import ( 
+"fmt"
+)
+
+// const x = 10 
+var y = 10 
+
+var c int
+// var d float64
+
+func main () {
+// a := 10 
+// b := 10.0
+c = y
+
+fmt.Println(c)
+} 
+
+
+// 
+
+package main
+import ( 
+"fmt"
+)
+
+// const x = 10 
+// var y = 10 
+
+// var c int
+var d float64
+
+func main () {
+// a := 10 
+// b := 10.0
+// c = y
+ d = x
+//if you using d = y error as type float64 in assignment
+fmt.Println(d)
+} 
+
+
+// 
+package main
+improt ( 
+"fmt"
+)
+
+const (
+x = 10 
+y = 20
+z = 30
+ )
+ 
+
+func main () {
+// a := 10 
+// b := 10.0
+c = y
+
+fmt.Println(x, y, z)
+} 
+
+
+// 
