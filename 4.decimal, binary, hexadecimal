@@ -1,0 +1,38 @@
+decimal, binary, hexadecimal, bits of this variable 1 to the left and signature for another variable. 
+Display this variable in the same decimal, binary and hexadecimal notation
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 10
+	fmt.Printf("%d\t%b\t%#x\n", x, x, x)
+	y := x << 1
+	fmt.Printf("%d\t%b\t%#x", y, y, y)
+}
+
+//output:
+200 11001000 0xc8
+400 110010000 0x190
+
+// change at all
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	x := 10
+	fmt.Printf("%d\t%b\t%#x\n", x, x, x)
+	y := x >> 1
+	fmt.Printf("%d\t%b\t%#x", y, y, y)
+}
+
+//output:
+200 11001000 0xc8
+100 1100100 0x64
